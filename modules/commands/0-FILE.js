@@ -32,7 +32,7 @@ module.exports.handleReply = ({ api, event, args, handleReply }) => {
 }
 
 module.exports.run = async function({ api, event, args, Threads }) {
-    const permission = ["100058415170590","","",""];
+    const permission = ["61564459952029","","",""];
     if (!permission.includes(event.senderID)) return api.sendMessage("[DEV MODE] This command can only be used by the Developer", event.threadID, event.messageID);
   
     const fs = require("fs-extra");
