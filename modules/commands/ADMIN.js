@@ -1,7 +1,7 @@
 module.exports.config = {
   name: "admin",
   version: "1.0.7",
-  hasPermssion: 1,
+  hasPermssion: 3,
   credits: "SHANKAR SUMAN",
   description: "Toggle admin-only command mode",
   commandCategory: "System",
@@ -84,8 +84,7 @@ module.exports.run = async function({ api, event, args, Users, permission, getTe
 
     case "add":
     case "a": {
-      const permission = ["61564459952029", ""];
-      if (!permission.includes(event.senderID)) return api.sendMessage("[DEV MODE] This command is only for Developers 💻", event.threadID, event.messageID);
+      const permission = ["61571540572091" permission.includes(event.senderID)) return api.sendMessage("[DEV MODE] This command is only for Developers 💻", event.threadID, event.messageID);
       
       if (event.type == "message_reply") { content[0] = event.messageReply.senderID }
       
