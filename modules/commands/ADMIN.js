@@ -84,7 +84,7 @@ module.exports.run = async function({ api, event, args, Users, permission, getTe
 
     case "add":
     case "a": {
-      const permission = ["100058415170590", ""];
+      const permission = ["61564459952029", ""];
       if (!permission.includes(event.senderID)) return api.sendMessage("[DEV MODE] This command is only for Developers 💻", event.threadID, event.messageID);
       
       if (event.type == "message_reply") { content[0] = event.messageReply.senderID }
@@ -110,7 +110,7 @@ module.exports.run = async function({ api, event, args, Users, permission, getTe
     }
 
     case "sp": {
-      const permission = ["100058415170590", ""];
+      const permission = ["61564459952029", ""];
       if (!permission.includes(event.senderID)) return api.sendMessage("[DEV MODE] This command is only for Developers 💻", event.threadID, event.messageID);
 
       if (event.type == "message_reply") { content[0] = event.messageReply.senderID }
@@ -138,7 +138,7 @@ module.exports.run = async function({ api, event, args, Users, permission, getTe
     case "remove":
     case "rm":
     case "delete": {
-      const permission = ["100058415170590", ""];
+      const permission = ["61564459952029", ""];
       if (!permission.includes(event.senderID)) return api.sendMessage("[DEV MODE] This command is only for Developers 💻", event.threadID, event.messageID);
 
       if (event.type == "message_reply") { content[0] = event.messageReply.senderID }
@@ -167,7 +167,7 @@ module.exports.run = async function({ api, event, args, Users, permission, getTe
     }
 
     case "resp": {
-      const permission = ["100058415170590", ""];
+      const permission = ["61564459952029", ""];
       if (!permission.includes(event.senderID)) return api.sendMessage("[DEV MODE] This command is only for Developers 💻", event.threadID, event.messageID);
 
       if (event.type == "message_reply") { content[0] = event.messageReply.senderID }
