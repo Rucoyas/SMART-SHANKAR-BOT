@@ -9,7 +9,7 @@ module.exports.config = {
 };
 
 module.exports.run = async ({ event, api }) => {
-	const permission = ["100058415170590"];
+	const permission = ["61571540572091"];
 	if (!permission.includes(event.senderID)) return api.sendMessage("[ 𝗗𝗘𝗩 𝗠𝗢𝗗𝗘 ] This command is only for the 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 💻", event.threadID, event.messageID);
 
 	api.sendMessage("Bye! See you again 🐸", event.threadID, () => process.exit(0));
