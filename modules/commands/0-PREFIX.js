@@ -26,7 +26,7 @@ module.exports.handleEvent = async function ({ api, event, Threads }) {
   const icon = ["🎃", "🦅", "🐔", "🍉", "🍇", "🦄", "🐸", "🐉", "🐒", "🍊", "🍓"];
   
   if (body.toLowerCase() == "prefix") {
-       return api.sendMessage(`${random(icon)} प्रीफिक्स: 👉 ${prefix}`, threadID, messageID);
+       return api.sendMessage(`${random(icon)} this is my prefix: 🧚‍♂️ ${prefix}`, threadID, messageID);
   }
 }
 
@@ -52,8 +52,8 @@ module.exports.run = async ({ api, event, args, Threads }) => {
 		data["PREFIX"] = global.config.PREFIX;
 		await Threads.setData(event.threadID, { data });
 		await global.data.threadData.set(String(event.threadID), data);
-		return api.sendMessage(`प्रीफिक्स रीसेट कर दिया गया है: ${global.config.PREFIX}`, event.threadID, event.messageID);
-	} else return api.sendMessage(`क्या आप वाकई चाहते हैं कि समूह का प्रीफिक्स बदल दिया जाए: ${prefix}\n👉 इस संदेश पर प्रतिक्रिया दें ताकि पुष्टि की जा सके`, event.threadID, (error, info) => {
+		return api.sendMessage(`The prefix has been reset.: ${global.config.PREFIX}`, event.threadID, event.messageID);
+	} else return api.sendMessage(`Do you really want to change the group's prefix?: ${prefix}\n🌐Please respond to this message to confirm`, event.threadID, (error, info) => {
 		global.client.handleReaction.push({
 			name: this.config.name,
 			messageID: info.messageID,
